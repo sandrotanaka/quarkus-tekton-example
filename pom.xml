@@ -86,6 +86,12 @@
               <goal>generate-code</goal>
               <goal>generate-code-tests</goal>
             </goals>
+            <configuration>
+                <native-image-xmx>4G</native-image-xmx>
+                <additionalBuildArgs>
+                    -H:+AllowDeprecatedBuilderClassesOnImageClasspath
+                </additionalBuildArgs>
+            </configuration>
           </execution>
         </executions>
       </plugin>
