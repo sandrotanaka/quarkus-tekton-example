@@ -88,12 +88,9 @@
         <executions>
           <execution>
             <goals>
-                <!--
               <goal>build</goal>
               <goal>generate-code</goal>
-              <goal>generate-code-tests</goal>
-                -->
-              <goal>native-image</goal>
+              <!-- <goal>generate-code-tests</goal> -->
             </goals>
             <configuration>
                 <native-image-xmx>4G</native-image-xmx>
